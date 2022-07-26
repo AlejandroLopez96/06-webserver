@@ -16,29 +16,29 @@ app.use(express.static('public'))
 //   res.send('Hello World')
 // })
 
-app.get('/', (req, res) => {
-    res.render('home', {
-        nombre: 'Alejandro',
-        titulo: 'Curso node'
-    })
-})
+// app.get('/', (req, res) => {
+//     res.render('home', {
+//         nombre: 'Alejandro',
+//         titulo: 'Curso node'
+//     })
+// })
 
-app.get('/elements', (req, res) => {
-    res.render('elements', {
-        nombre: 'Alejandro',
-        titulo: 'Curso node'
-    })
-})
+// app.get('/elements', (req, res) => {
+//     res.render('elements', {
+//         nombre: 'Alejandro',
+//         titulo: 'Curso node'
+//     })
+// })
 
-app.get('/generic', (req, res) => {
-    res.render('generic', {
-        nombre: 'Alejandro',
-        titulo: 'Curso node'
-    })
-})
+// app.get('/generic', (req, res) => {
+//     res.render('generic', {
+//         nombre: 'Alejandro',
+//         titulo: 'Curso node'
+//     })
+// })
 
 app.get('*', (req, res) => {
-    res.sendFile(__dirname + '/public/404.html')
+    res.sendFile(__dirname + '/public/index.html')
 })
 
 app.listen(port, () => {
